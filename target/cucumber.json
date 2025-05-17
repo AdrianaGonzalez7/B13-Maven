@@ -1,0 +1,711 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mac\u0027, ip: \u0027fd18:ce7c:7b62:6d44:1440:ea56:39b7:f92f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002715.4.1\u0027, java.version: \u002711.0.25\u0027\nDriver info: driver.version: EdgeDriver\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat ✽.Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"(file:///Users/adrianag./eclipse-workspace/B13-Maven/src/test/resources/smoke/SmokeTest.feature:4)\nCaused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:21701/status] to be available after 20004 ms\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:64)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:99)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:198)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:233)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:158)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)\n\tat com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)\n\t... 64 more\n",
+              "duration": 24309582000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToNTK(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Admin User provides credentials \"ntk-admin\" \"Password123@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ntk-admin\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Password123@12\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Admin User clicks login button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Admin User navigates to \"Admin\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Admin User selects \"Job Titles\" from \"Job\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Job Titles\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Job\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.selectValueFromDropdown(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-05-17T01:03:06.759Z",
+        "line": 19,
+        "name": "Verify Add new Job Title Functionality",
+        "description": "",
+        "id": "job-titles-functionality;verify-add-new-job-title-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 40000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "Admin User clicks add button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickAddBtn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 41000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Admin User provides Job Title field values \"B13Cucumber44\" \"Java is fun\" \"More Homework\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B13Cucumber44\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"Java is fun\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"More Homework\"",
+                  "offset": 73
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterJobTitleFieldValues(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Admin User clicks save button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickSaveBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "System displays success message \"Successfully Saved\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Saved\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.verifySuccessMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mac\u0027, ip: \u0027fd18:ce7c:7b62:6d44:1440:ea56:39b7:f92f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002715.4.1\u0027, java.version: \u002711.0.25\u0027\nDriver info: driver.version: EdgeDriver\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat ✽.Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"(file:///Users/adrianag./eclipse-workspace/B13-Maven/src/test/resources/smoke/SmokeTest.feature:4)\nCaused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:44913/status] to be available after 20003 ms\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:64)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:99)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:198)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:233)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:158)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)\n\tat com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)\n\t... 64 more\n",
+              "duration": 20164155000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToNTK(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Admin User provides credentials \"ntk-admin\" \"Password123@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ntk-admin\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Password123@12\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Admin User clicks login button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Admin User navigates to \"Admin\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Admin User selects \"Job Titles\" from \"Job\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Job Titles\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Job\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.selectValueFromDropdown(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-05-17T01:03:31.115Z",
+        "line": 29,
+        "name": "Verify User cannot add duplicate job",
+        "description": "",
+        "id": "job-titles-functionality;verify-user-cannot-add-duplicate-job;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 68000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Admin User clicks add button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickAddBtn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 384000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Admin User provides Job Title field values \"a\" \"\" \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterJobTitleFieldValues(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "System displays error message under Job Titles field \"Already exists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Already exists\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.verifyAlreadyExistsMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mac\u0027, ip: \u0027fd18:ce7c:7b62:6d44:1440:ea56:39b7:f92f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002715.4.1\u0027, java.version: \u002711.0.25\u0027\nDriver info: driver.version: EdgeDriver\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat ✽.Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"(file:///Users/adrianag./eclipse-workspace/B13-Maven/src/test/resources/smoke/SmokeTest.feature:4)\nCaused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:47344/status] to be available after 20004 ms\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:64)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:99)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:198)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:233)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:158)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)\n\tat com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)\n\t... 64 more\n",
+              "duration": 20181372000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToNTK(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 483000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Admin User provides credentials \"ntk-admin\" \"Password123@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ntk-admin\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Password123@12\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Admin User clicks login button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Admin User navigates to \"Admin\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Admin User selects \"Job Titles\" from \"Job\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Job Titles\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Job\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.selectValueFromDropdown(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-05-17T01:03:51.296Z",
+        "line": 40,
+        "name": "Verify User can edit existing job",
+        "description": "",
+        "id": "job-titles-functionality;verify-user-can-edit-existing-job;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 46000,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "Admin User clicks edit icon 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 28
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.clickEditIcon(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58000,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "Admin User provides Job Title field values \"B13XYZ444\" \"xyzDesc\" \"xyzNotes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"B13XYZ444\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"xyzDesc\"",
+                  "offset": 55
+                },
+                {
+                  "val": "\"xyzNotes\"",
+                  "offset": 65
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterJobTitleFieldValues(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "Admin User clicks save button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickSaveBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "System displays update message \"Successfully Updated\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Updated\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.verifyUpdateMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Mac\u0027, ip: \u0027fd18:ce7c:7b62:6d44:1440:ea56:39b7:f92f%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027aarch64\u0027, os.version: \u002715.4.1\u0027, java.version: \u002711.0.25\u0027\nDriver info: driver.version: EdgeDriver\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat ✽.Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"(file:///Users/adrianag./eclipse-workspace/B13-Maven/src/test/resources/smoke/SmokeTest.feature:4)\nCaused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:35713/status] to be available after 20003 ms\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)\n\tat org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)\n\tat org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:141)\n\tat org.openqa.selenium.edge.EdgeDriver.\u003cinit\u003e(EdgeDriver.java:96)\n\tat utils.Hooks.setUp(Hooks.java:23)\n\tat com.steps.JobTitlesStep.navigateToNTK(JobTitlesStep.java:24)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:44)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:64)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:63)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:49)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:99)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:198)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:233)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)\n\tat org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:158)\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)\n\tat org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)\n\tat org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)\nCaused by: java.util.concurrent.TimeoutException\n\tat java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)\n\tat com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)\n\tat org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)\n\t... 64 more\n",
+              "duration": 20150464000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Admin User navigates to NTK Login page \"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://ntkhr.noortecktraining.com/web/index.php/auth/login\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToNTK(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Admin User provides credentials \"ntk-admin\" \"Password123@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ntk-admin\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Password123@12\"",
+                  "offset": 44
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Admin User clicks login button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickLoginBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "Admin User navigates to \"Admin\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.navigateToPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "Admin User selects \"Job Titles\" from \"Job\" dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Job Titles\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"Job\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.selectValueFromDropdown(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-05-17T01:04:11.499Z",
+        "line": 50,
+        "name": "Verify User can delete existing job",
+        "description": "",
+        "id": "job-titles-functionality;verify-user-can-delete-existing-job;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133000,
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "Admin User clicks delete icon 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 30
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.clickDeleteIcon(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 167000,
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "Admin User clicks Yes Delete button",
+            "match": {
+              "location": "com.steps.JobTitlesStep.clickYesDeleteBtn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37000,
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": "System displays delete message \"Successfully Deleted\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Successfully Deleted\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.steps.JobTitlesStep.verifyDeleteMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Job Titles Functionality",
+    "description": "",
+    "id": "job-titles-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/smoke/SmokeTest.feature",
+    "tags": []
+  }
+]
