@@ -21,7 +21,7 @@ public class JobTitlesStep {
 
 	@Given("Admin User navigates to NTK Login page {string}")
 	public void navigateToNTK(String url) throws InterruptedException {
-		Hooks.setUp("firefox");
+		Hooks.setUp("safari");
 		Hooks.driver.get(url);
 
 		loginObj = new LoginPage(Hooks.driver);
@@ -130,7 +130,10 @@ public class JobTitlesStep {
 	}
 	
 
- 
+ /**
+  *  test 
+  * @param index
+  */
 	
 	
 	

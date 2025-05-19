@@ -3,6 +3,7 @@ package utils;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -17,10 +18,10 @@ public class Hooks {
 	public static void setUp(String browserName) {
 		
 		
-		if (browserName.equals("edge")) {
+		if (browserName.equals("chrome")) {
 
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 
 		} else if (browserName.equals("safari")) {
 			
